@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!------------MOBILE NAV SECTION-------------------->
+        <div class="mobile-navCONT">
+          <nav class="navbar navbar-dark  fixed-top">
+  <div id="mNav-innerCONT" class="container-fluid">
+    <button id="btn-togglerBorder" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span id="navtogIcon" class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header" id="mobileNav">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" id="mobileHome" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Bible Plans</a>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link" href="about.html">Live Sessions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Articles</a></li>
+              <li><a class="dropdown-item" href="#">Learning Tools</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Note Pad</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form id="mSearchbox" class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+      <div class="mNav-Titles">
+    <span style="font-weight: bolder;">ROOTED</span>
+    <span style="font-weight: lighter;">TOGETHER</span>
+      </div>
+  </div>
+</nav>
+      </div>
+    <!---------------------------------------Desktop Nav SECTION----------------------------------->
+      <div class="dsk-navCONT">
+          <div class="dsk-titleCONT"><h4> Bible Web</h4></div>
+            <ul class="dsk-innerNavCont">
+                <li class="dsk-innerTXTCont"><p >Home</p></li></li>
+                <li class="dsk-innerTXTCont">
+                  <p class="dsk-innerTXT" id="Community">Community</p>
+                  <i  id="dsk-dropArrows" class="fa-solid fa-circle-chevron-down"></i>
+                </li>
+
+                <li class="dsk-innerTXTCont">
+                  <p class="dsk-innerTXT" id="Resources">Resources</p>
+                  <i id="dsk-dropArrows" class="fa-solid fa-circle-chevron-down"></i>
+                </li>
+            </ul>
+
+              <div class="dsk-navbtnCONT">
+                <button class="dsk-navBTN">Log In</button>
+                <button class="dsk-navBTN">Log In</button>
+              </div>
+      </div>
+          <div id="dsk-commCONT">
+              <ul class="dsk-dropListCONT">
+                <li>Prayer Request </li>
+                <li>Forums</li>
+                <li>Groups</li>
+              </ul>
+          </div>
+          <div id="dsk-resCONT">
+            <ul class="dsk-dropListCONT">
+              <li>Articles</li>
+              <li>Guides</li>
+              <li>Videos</li>
+            </ul>
+          </div>
+      <!---------------------------------------HERO SECTION----------------------------------->
+        <article class="cont">
+          <img id="coverIMG" src="./cover.avif" alt="">
+           <div class="hero-txtCONT">
+                 <h1 id="quotesCONT"></h1>
+                 <div class="quoteFilter"></div>
+           </div>
+           
+        </article>
+    <!---------------------------------------BIBLE STATS SECTION----------------------------------->
+        <section class="cont">
+                <div class="bStats-CONT">
+                  <h2> 100+</h2>
+                  <h3> Learning Tools</h3>
+                  <p class="b-statTXT">Unlock over 100+ interactive learning tools designed to deepen your understanding of Scripture.</p>
+                </div>
+                <div class="bStats-CONT">
+                    <h2> 10+</h2>
+                  <h3> Mentors</h3>
+                  <p class="b-statTXT">“Connect with caring mentors who walk alongside you in your spiritual journey.</p>
+                </div>
+                <div class="bStats-CONT">
+                    <h2> 30+</h2>
+                  <h3>Live Sessions</h3>
+                  <p class="b-statTXT">Join live video sessions where faith comes to life. Study the Bible in real-time</p>
+                </div>
+        </section>
+        <!---------------------------------------BIBLE TRANSLATION SECTION----------------------------------->
+        <aside class="cont">
+            <div id="bible">
+              <img id="bibleIMG" src="./img/bible.png" alt="">
+            </div>
+               <figure>
+
+                <div class="bibleFeat-CONT">
+
+                 <div id="spiritBG">
+                  <i id="bFeat-ICON" class="fa-solid fa-seedling"></i>
+                  <h5>Spiritual Growth</h5>
+                    <p class="bFeat-TXT">
+                      Strengthens faith: Provides guidance, encouragement, and hope through 
+                      stories, teachings, and promises.
+                    </p>
+                 </div>
+
+                </div>
+
+                <div class="bibleFeat-CONT">
+                  <div id="heartBG">
+                    <i id="bFeat-ICON" class="fa-solid fa-heart-pulse"></i>
+                    <h5>Mental & Emotional Benefits</h5>
+                    <p class="bFeat-TXT">
+                     Peace & comfort: Many find solace in Scripture during stress,
+                      anxiety, or grief..
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bibleFeat-CONT">
+                  <div id="brainBG">
+                      <i id="bFeat-ICON" class="fa-solid fa-brain"></i>
+                    <h5>Cognitive & Intellectual Growth</h5>
+                    <p class="bFeat-TXT">
+                     Improves focus & discipline: Regular reading builds 
+                     mental discipline and habit.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bibleFeat-CONT">
+                  <div id="freindsBG">
+                       <i id="bFeat-ICON" class="fa-solid fa-people-arrows"></i>
+                    <h5>Social & Relational Benefits</h5>
+                    <p class="bFeat-TXT">
+                     Better relationships: Teachings on love, forgiveness, humility, 
+                     and patience.
+                    </p>
+                  </div>
+                </div>
+               </figure>
+        </aside>
+          <footer>
+        <p class="ftTXT">"© 2025 Darius Arrington | @DariusSites | All Rights Reserved"</p>
+    </footer>
+    </main>    
+
+    
+</body>
+<script src="action.js"></script>
+</html>
