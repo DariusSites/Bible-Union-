@@ -669,6 +669,14 @@ figure {
 #bFeat-ICON{
      font-size: 3.5rem;
 }
+/*----------TABLET---------*/
+ @media(min-width:750px){
+#bFeat-ICON {
+    font-size: 2.5rem;
+    padding-top: 13px;
+}
+}
+
 /*----------------FOOTER----*/
 footer {
     background-color: #ddddc6;
@@ -700,4 +708,5 @@ position: relative;
  padding-top: 15px;
  height: auto;
        }
+
     }
